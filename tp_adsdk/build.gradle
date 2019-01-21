@@ -41,6 +41,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.alibaba:fastjson:1.2.54'
+    implementation 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
     implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
     implementation 'com.jaredrummler:android-processes:1.1.1'
 }

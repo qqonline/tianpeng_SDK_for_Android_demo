@@ -1,6 +1,6 @@
 // 1.maven-插件
 apply plugin: 'maven'
-
+//apply plugin: 'com.github.dcendents.android-maven'
 // 2.maven-信息
 ext {// ext is a gradle closure allowing the declaration of global properties
     PUBLISH_GROUP_ID = 'com.tianpeng.tp_adsdk'

@@ -11,7 +11,6 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/tianpengaddemo" />
             <option value="$PROJECT_DIR$/tp_adsdk" />
-            <option value="$PROJECT_DIR$/tpad_sdk" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

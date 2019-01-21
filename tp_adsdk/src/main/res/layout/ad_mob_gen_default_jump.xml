@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tianpeng.tp_adsdk.tpadmobsdk.widget.progress.DonutProgress xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    custom:donut_progress="100"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    custom:donut_finished_stroke_width="2dp"
+    custom:donut_text="跳过"
+    custom:donut_text_size="10sp"
+    custom:donut_text_color="#fff"
+    custom:donut_finished_color="#4a59c8"
+    custom:donut_unfinished_color="#959394"
+    custom:donut_background_color="#33000000"
+    custom:donut_unfinished_stroke_width="2dp"/>

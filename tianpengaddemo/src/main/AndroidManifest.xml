@@ -53,6 +53,19 @@
         </provider>
         <service android:name="com.tianpeng.tp_adsdk.mine.service.OperationService"/>
         <service android:name="com.tianpeng.tp_adsdk.toutiao.service.AppDownloadService"/>
+        <activity
+            android:name="com.youdao.sdk.common.YouDaoBrowser"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.youdao.sdk.nativeads.YouDaoInterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent">
+        </activity>
+        <service
+            android:name="com.youdao.sdk.common.YouDaoAppService"
+            android:enabled="true"/>
         <!--<service-->
             <!--android:name="com.qq.e.comm.DownloadService"-->
             <!--android:exported="false"/>-->

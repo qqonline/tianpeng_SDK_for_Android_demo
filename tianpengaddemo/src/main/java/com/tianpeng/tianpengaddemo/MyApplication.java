@@ -14,7 +14,7 @@ import com.tianpeng.tp_adsdk.tpadmobsdk.common.TPADMobSDK;
 
 public class MyApplication extends Application {
 
-    private String APP_ID = "123";
+    private String APP_ID = "biaoxiong";
     private boolean debug = false;
 
     @Override
@@ -25,9 +25,9 @@ public class MyApplication extends Application {
         // TODO: 接入的广告渠道列表.
         TPADMobSDK.instance().initSdk(getApplicationContext(), APP_ID, debug
                 , ADMobGenAdPlaforms.PLAFORM_GDT
-                , ADMobGenAdPlaforms.PLAFORM_BAIDU
                 , ADMobGenAdPlaforms.PLAFORM_TOUTIAO
                 , ADMobGenAdPlaforms.PLAFORM_YOUDAO
+                , ADMobGenAdPlaforms.PLAFORM_BAIDU
         );
 
     }

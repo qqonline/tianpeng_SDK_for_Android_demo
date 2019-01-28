@@ -24,8 +24,8 @@ public class MyApplication extends Application {
         // TODO: debug参数 默认传入false.
         // TODO: 接入的广告渠道列表.
         TPADMobSDK.instance().initSdk(getApplicationContext(), APP_ID, debug
-                , ADMobGenAdPlaforms.PLAFORM_GDT
                 , ADMobGenAdPlaforms.PLAFORM_TOUTIAO
+//                , ADMobGenAdPlaforms.PLAFORM_GDT
                 , ADMobGenAdPlaforms.PLAFORM_YOUDAO
                 , ADMobGenAdPlaforms.PLAFORM_BAIDU
         );

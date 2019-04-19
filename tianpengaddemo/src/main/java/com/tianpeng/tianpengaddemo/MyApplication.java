@@ -14,7 +14,7 @@ import com.tianpeng.tp_adsdk.tpadmobsdk.common.TPADMobSDK;
 
 public class MyApplication extends Application {
 
-    private String APP_ID = "biaoxiong";
+    private String APP_ID = "RE6OYRTCV4568";
     private boolean debug = false;
 
     @Override

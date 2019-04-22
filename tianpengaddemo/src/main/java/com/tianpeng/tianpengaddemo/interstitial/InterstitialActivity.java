@@ -1,10 +1,11 @@
 package com.tianpeng.tianpengaddemo.interstitial;
 
-import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -15,7 +16,7 @@ import com.tianpeng.tp_adsdk.tpadmobsdk.ad.listener.ADMobGenInsertitailAdListene
 /**
  * Created by YuHong on 2019/1/25 0025.
  */
-public class InterstitialActivity  extends Activity {
+public class InterstitialActivity  extends AppCompatActivity {
     private ADMobGenInsertView adMobGenInsertView;
     private static final String TAG = "ADMob_Log";
     @Override
@@ -26,6 +27,7 @@ public class InterstitialActivity  extends Activity {
     }
 
     public void showAd(View v){
+        showProgressDialog();
         adMobGenInsertView = new ADMobGenInsertView(InterstitialActivity.this);
         adMobGenInsertView.setListener(new ADMobGenInsertitailAdListener() {
             @Override
@@ -45,11 +47,13 @@ public class InterstitialActivity  extends Activity {
 
             @Override
             public void onADFailed(String s) {
+                dismissProgressDialog();
                 Log.e(TAG, "广告获取失败了 ::::: " + s);
             }
 
             @Override
             public void onADReceiv() {
+                dismissProgressDialog();
                 Log.e(TAG, "广告获取成功了 ::::: ");
             }
 
@@ -66,6 +70,22 @@ public class InterstitialActivity  extends Activity {
         adMobGenInsertView.loadAd();
     }
 
+
+    public ProgressDialog progressDialog;
+
+    public ProgressDialog showProgressDialog() {
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("正在...");
+        progressDialog.show();
+        return progressDialog;
+    }
+
+    public void dismissProgressDialog() {
+        if (progressDialog != null && progressDialog.isShowing()) {
+            // progressDialog.hide();会导致android.view.WindowLeaked
+            progressDialog.dismiss();
+        }
+    }
     @Override
     protected void onDestroy() {
         // 释放广告资源

@@ -33,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" android:launchMode="singleTask"/>
         <activity android:name=".banner.BannerActivity" android:screenOrientation="portrait"/>
         <activity android:name=".interstitial.InterstitialActivity" android:screenOrientation="portrait"/>
         <activity android:name=".information.InformationActivity" android:screenOrientation="portrait"/>

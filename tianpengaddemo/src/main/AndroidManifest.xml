@@ -47,6 +47,26 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/tpad_download_paths" />
         </provider>
+        <!--头条穿山甲需要声明以下provider-->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="${applicationId}.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/tpad_download_paths" />
+        </provider>
+        <!--百度广告需要声明以下provider-->
+        <provider
+        android:name="com.baidu.mobads.openad.FileProvider"
+        android:authorities="${applicationId}.bd.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/tpad_download_paths" />
+        </provider>
     </application>
 
 </manifest>

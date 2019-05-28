@@ -23,6 +23,17 @@
         android:elevation="5dp"
         android:gravity="center"
         android:text="插屏广告" />
+
+    <TextView
+        android:id="@+id/tvReward"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="激励视频" />
+
     <TextView
         android:id="@+id/tvInformation"
         android:layout_width="match_parent"

@@ -38,6 +38,8 @@
         <activity android:name=".interstitial.InterstitialActivity" android:screenOrientation="portrait"/>
         <activity android:name=".information.InformationActivity" android:screenOrientation="portrait"/>
         <activity android:name=".information.InformationImageOnlyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".reward.RewardVideoActivity"  android:configChanges="keyboard|orientation|screenSize"
+            android:screenOrientation="portrait"/>
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

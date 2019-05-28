@@ -7,6 +7,7 @@ import android.view.View;
 import com.tianpeng.tianpengaddemo.banner.BannerActivity;
 import com.tianpeng.tianpengaddemo.information.InformationActivity;
 import com.tianpeng.tianpengaddemo.interstitial.InterstitialActivity;
+import com.tianpeng.tianpengaddemo.reward.RewardVideoActivity;
 import com.tianpeng.tp_adsdk.tpadmobsdk.ad.constant.InformationAdType;
 
 
@@ -27,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 InterstitialActivity.jumpHere(MainActivity.this);
+            }
+        });
+        findViewById(R.id.tvReward).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RewardVideoActivity.jumpHere(MainActivity.this);
             }
         });
         findViewById(R.id.tvInformation).setOnClickListener(new View.OnClickListener() {

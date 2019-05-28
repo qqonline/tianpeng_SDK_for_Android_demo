@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+   <Button
+       android:id="@+id/download"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="50dp"
+       android:layout_marginRight="50dp"
+       android:layout_marginTop="50dp"
+       android:text="加载激励视频广告"
+       android:textColor="#ffffff"
+       android:background="#666666"
+       android:onClick="downloadAd"/>
+   <Button
+       android:id="@+id/show"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="50dp"
+       android:layout_marginRight="50dp"
+       android:text="显示激励视频广告"
+       android:textColor="#ffffff"
+       android:background="#666666"
+       android:onClick="showAd"/>
+</LinearLayout>

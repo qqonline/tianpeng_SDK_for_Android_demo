@@ -6,11 +6,22 @@
     android:orientation="vertical">
 
    <Button
+       android:id="@+id/get_ad"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="50dp"
+       android:layout_marginRight="50dp"
+       android:text="获取插屏广告"
+       android:textColor="#ffffff"
+       android:background="#666666"
+       android:onClick="getAd"/>
+   <Button
        android:id="@+id/show"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_margin="50dp"
-       android:text="获取并显示插屏广告"
+       android:text="显示插屏广告"
        android:textColor="#ffffff"
        android:background="#666666"
        android:onClick="showAd"/>

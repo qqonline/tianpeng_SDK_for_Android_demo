@@ -16,7 +16,7 @@ import com.tianpeng.tp_adsdk.tpadmobsdk.ad.listener.ADMobGenInsertitailAdListene
 /**
  * Created by YuHong on 2019/1/25 0025.
  */
-public class InterstitialActivity  extends AppCompatActivity {
+public class InterstitialActivity extends AppCompatActivity {
     private ADMobGenInsertView adMobGenInsertView;
     private static final String TAG = "ADMob_Log";
     @Override
@@ -26,7 +26,7 @@ public class InterstitialActivity  extends AppCompatActivity {
 
     }
 
-    public void showAd(View v){
+    public void getAd(View v){
         showProgressDialog();
         adMobGenInsertView = new ADMobGenInsertView(InterstitialActivity.this);
         adMobGenInsertView.setListener(new ADMobGenInsertitailAdListener() {
@@ -68,6 +68,9 @@ public class InterstitialActivity  extends AppCompatActivity {
             }
         });
         adMobGenInsertView.loadAd();
+    }
+    public void showAd(View v){
+        adMobGenInsertView.show();
     }
 
 

@@ -23,12 +23,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    //加上如下代码
-//    packagingOptions {
-//        exclude  'AndroidManifest.xml'
-//        exclude  'R.txt'
-//        exclude  'res/values/values.xml'
-//    }
 }
 
 dependencies {

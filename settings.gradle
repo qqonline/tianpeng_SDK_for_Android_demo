@@ -1,1 +1,1 @@
-include ':app', ':tianpengaddemo', ':tp_adsdk'
+include ':tianpengaddemo'

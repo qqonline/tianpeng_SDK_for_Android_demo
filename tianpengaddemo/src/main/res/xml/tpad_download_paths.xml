@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--穿山甲以及其他sdk需要-->
+    <!--穿山甲需要-->
+    <external-path name="tt_external_root" path="." />
+    <external-path name="tt_external_download" path="Download" />
+    <external-files-path name="tt_external_files_download" path="Download" />
+    <files-path name="tt_internal_file_download" path="Download" />
+    <cache-path name="tt_internal_cache_download" path="Download" />
+    <!--其他sdk需要-->
     <external-path name="external_path" path="Download" />
     <external-files-path name="external_files_path" path="Download" />
     <!--百度sdk需要-->
     <external-files-path name="bdpath" path="bddownload/" />
     <external-path name="bdpathsd" path="bddownload/" />
     <!--广点通sdk需要-->
-    <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD" />
+    <external-cache-path
+        name="gdt_sdk_download_path1"
+        path="com_qq_e_download" />
+    <cache-path
+        name="gdt_sdk_download_path2"
+        path="com_qq_e_download" />
 </paths>

@@ -38,9 +38,14 @@
         <activity android:name=".banner.BannerActivity" android:screenOrientation="portrait"/>
         <activity android:name=".interstitial.InterstitialActivity" android:screenOrientation="portrait"/>
         <activity android:name=".information.InformationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".fullscreenvideo.FullScreenVideoActivity" android:screenOrientation="portrait"/>
         <activity android:name=".information.InformationImageOnlyActivity" android:screenOrientation="portrait"/>
         <activity android:name=".reward.RewardVideoActivity"  android:configChanges="keyboard|orientation|screenSize"
             android:screenOrientation="portrait"/>
+        <!--支持头条激励视频添加跳过按钮        -->
+        <service android:name="com.tianpeng.tp_adsdk.tpadmobsdk.service.AppRewardVideoStateService"/>
+
+        <!--需要声明以下provider -->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -50,19 +55,14 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/tpad_download_paths" />
         </provider>
-        <!--头条穿山甲需要声明以下provider-->
+        <!--头条穿山甲需要再声明以下provider-->
         <provider
-            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
-            android:authorities="${applicationId}.TTFileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/tpad_download_paths" />
-        </provider>
-        <!--百度广告需要声明以下provider-->
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!--百度广告需要再声明以下provider-->
         <provider
-        android:name="com.baidu.mobads.openad.FileProvider"
+        android:name="com.baidu.mobads.openad.BdFileProvider"
         android:authorities="${applicationId}.bd.provider"
         android:exported="false"
         android:grantUriPermissions="true">

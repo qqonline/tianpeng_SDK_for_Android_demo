@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.tianpeng.tianpengaddemo.banner.BannerActivity;
+import com.tianpeng.tianpengaddemo.fullscreenvideo.FullScreenVideoActivity;
 import com.tianpeng.tianpengaddemo.information.InformationActivity;
 import com.tianpeng.tianpengaddemo.interstitial.InterstitialActivity;
 import com.tianpeng.tianpengaddemo.reward.RewardVideoActivity;
@@ -16,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
+
+//        Sampler.getInstance().init(getApplicationContext(), 10000L);
+//        Sampler.getInstance().start();
         findViewById(R.id.tvBanner).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +73,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 InformationActivity.jumpHere(MainActivity.this, InformationAdType.VERTICALPICFLOW);
+            }
+        });
+        findViewById(R.id.tvFullScreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FullScreenVideoActivity.jumpHere(MainActivity.this);
             }
         });
     }
